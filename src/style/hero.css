@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    background-color: pink;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.img-div{
+    margin-right: 14px;
+    margin-left: 90px;
+}
+.heading{
+    font-size: 90px;
+    
+}
+.h2{
+    margin-left: 200px;
+}
+
+@media  screen and (min-width:100px) and (max-width:750px){
+    .container{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 800px;  
+}
+.img-div{
+    margin-right: 14px;
+    margin-left: -120px;
+    height: 100%;
+
+}
+.heading{
+    font-size:x-large;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    
+    
+}
+}
