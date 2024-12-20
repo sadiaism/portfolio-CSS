@@ -12,7 +12,7 @@ const hero = () => {
             alt="Profile"/>
         </div>
         <div className='h2'>
-            <h2 className='heading'>I'm</h2>
+            <h2 className='heading'>{`I'm`}</h2>
             <h2 className='heading'>SADIA</h2>
             <h2 className='heading'>ALAMDAR</h2>
         </div>
