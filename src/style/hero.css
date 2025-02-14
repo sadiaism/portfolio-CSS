@@ -1,46 +1,84 @@
-.container{
-    width: 100%;
-    background-color: pink;
-    height: 1200px;
-    justify-content: center;
-    align-items: center;
+.container {
     display: flex;
-    
-}
-.img-div{
-    margin-right: 14px;
-    margin-left: 90px;
-}
-.heading{
-    font-size: 90px;
-    
-}
-.h2{
-    margin-left: 200px;
-}
-
-@media  screen and (min-width:100px) and (max-width:750px){
-    .container{
-        width: 100%;
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        height: 800px;  
-}
-.img-div{
-    margin-right: 14px;
-    margin-left: -120px;
-    height: 100%;
-
-}
-.heading{
-    font-size:x-large;
     justify-content: center;
     align-items: center;
-    margin-right: 400px;
-    margin-bottom: 20px;
-    
-    
-}
-}
+    flex-wrap: wrap; /* Responsive handling */
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff9bac, #f7c5d9); /* Soft gradient background */
+    padding: 40px;
+  }
+  
+  /* Image Section */
+  .img-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    padding: 30px;
+  }
+  
+  .img-div img {
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Image Hover Effect */
+  .img-div img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Text Section */
+  .h2 {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+  }
+  
+  /* Heading Styling */
+  .heading {
+    font-size: 64px; /* Bigger text */
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Text Animation */
+  .heading:hover {
+    color: #ffe600;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .heading {
+      font-size: 52px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .heading {
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+  
+    .img-div img {
+      width: 75%;
+      max-width: 350px;
+    }
+  }
+  

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const projects = () => {
   return (
-    <main className='main'>
+    <main id="projects"className='main'>
         <div className='h'> My Projects</div>
 
         <div className='boxes'>

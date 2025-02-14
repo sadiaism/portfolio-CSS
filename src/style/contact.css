@@ -1,15 +1,82 @@
 
-.num{
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #89f7fe, #66a6ff); /* Soft gradient background */
+    padding: 20px;
+  }
+  
+  /* Contact Form Box */
+  .num > div {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 600px;
-    background-color: pink;
-}
-
-.box3{
-    margin-top: 50px;
-}
-
-
-
-
-
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  .h {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styling */
+  .num1, .box3 label {
+    display: block;
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  /* Input Fields */
+  .h4 {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Input Hover & Focus */
+  .h4:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Input Box Styling */
+  .box2, .box3 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .num > div {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .h {
+      font-size: 28px;
+    }
+  
+    .num1, .box3 label {
+      font-size: 16px;
+    }
+  
+    .h4 {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
